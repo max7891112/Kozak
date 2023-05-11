@@ -21,3 +21,19 @@
         color: $color-black;
     }
 }
+
+._order-button{
+    @include text(14px, 300, 130%);
+    width: 100%;
+    border-radius: 30px;
+    background-color: $color-dark-blue;
+    padding: 15px 20px;
+    color: $color-white;
+    transition: all .3s ease 0s;
+    &:hover{
+        background-color: $color-light-blue;
+    }
+    &:active{
+        background-color: $color-black;
+    }
+}

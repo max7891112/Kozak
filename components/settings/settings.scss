@@ -130,7 +130,7 @@
   }
 
   .ticker-wrapper__second-half {
-    animation: $duration ticker $duration/2 infinite linear forwards;
+    animation: $duration ticker 10s infinite linear forwards;
   }
 }
 

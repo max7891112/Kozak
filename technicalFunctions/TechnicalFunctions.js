@@ -1,26 +1,7 @@
+import ModalCase from '../components/modal/modalCase/ModalCase.js';
+import ModalForm from '../components/modal/modalForm/ModalForm.js';
 class TechnicalFunctions {
 
-    // formValidate(className,emailName) {
-    //     let error = 0;
-    //     let formReq = document.querySelectorAll(`.${className}`);
-    //     for(let i = 0; i< formReq.length; i++) {
-    //         let input = formReq[i];
-    //         this.formRemoveError(input);
-
-    //         if(input.classList.contains(emailName)) {
-    //              if(!this.emailTest(input)){
-    //                 this.formAddError(input);
-    //                 error++;
-    //              };
-    //         } else {
-    //             if(input.value == '') {
-    //                 this.formAddError(input);
-    //                 error++;
-    //             };
-    //         };
-    //     };
-    //     return error;
-    // };
     
     formRemoveError(input) {
         input.classList.remove('_error');
@@ -44,6 +25,41 @@ class TechnicalFunctions {
             })
         }
     }
+
+    addListenerDataClose() {
+        document.addEventListener('click', function(event) {
+            let target = event.target;
+            if(target.dataset.close) {
+                ModalForm.close();
+                ModalCase.close()
+            };
+        });
+    };
+
+    addListenerForModalForm() {
+        let record = document.getElementById('rootModal');
+        record.addEventListener('click', function() { // запись на бесплатное занятие через главную страницу
+            ModalForm.open(); // открытие модального окна
+            ModalForm.sendForm();
+            document.addEventListener('keydown', function(event) {
+                if(event.code.toLowerCase() == 'escape') {
+                    ModalForm.close();
+                };
+            });
+        });
+    };
+
+    addListenerForModalCase() {
+        let record = document.getElementById('rootModalCase');
+        record.addEventListener('click', function() { // запись на бесплатное занятие через главную страницу
+            ModalCase.open(); // открытие модального окна
+            document.addEventListener('keydown', function(event) {
+                if(event.code.toLowerCase() == 'escape') {
+                    ModalCase.close();
+                };
+            });
+        });
+    };
 };
 
 export default new TechnicalFunctions()

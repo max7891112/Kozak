@@ -9,6 +9,9 @@
     <script src="./index.js" defer></script>
 </head>
 <body>
+
+    <div class="modalForm"></div>
+    <div class="modalCaseFirst"></div>
     <header class="header">
         <div class="header__container _container"></div>
     </header>
@@ -151,7 +154,7 @@
             <form action="#" class="form__form" id="questionForm">
                 <input class="form__input form__input_name _secondForm__req" placeholder="Имя" data-input="true">
                 <input class="form__input form__input_phone _secondForm__req" placeholder="+7 (978) 796-34-92" type="tel" data-input="true" maxlength="15">
-                <button class="form__button send-button" id="form-record">Заказать консультацию</button>
+                <button class="form__button _order-button " id="form-record">Заказать консультацию</button>
             </form>
         </div>
     </section>
@@ -181,7 +184,7 @@
                     <div class="cost-rate__bottom-container">
                         <p class="cost-rate__another-p">Подходит для теста ниши бизнеса в интернете и для тех, кто только начинает зарабатывать с Яндекс Директ</p>
                         <p class="cost-rate__cost">от 25 000 ₽</p>
-                        <button class="cost-rate__button _discassion-button">Обсудить</button>
+                        <button class="cost-rate__button _discassion-button" id="rootModal">Обсудить</button>
                     </div>
                 </div>
 
@@ -198,7 +201,7 @@
                     <div class="cost-rate__bottom-container">
                         <p class="cost-rate__another-p">Подходит для долговременных проектов с длинным плечом принятия решения о покупке, для B2B бизнесов</p>
                         <p class="cost-rate__cost">от 75 000 ₽</p>
-                        <button class="cost-rate__button _discassion-button">Обсудить</button>  
+                        <button class="cost-rate__button _discassion-button" id="rootModalCase">Обсудить</button>  
                     </div>
                     
                 </div>
@@ -235,7 +238,7 @@
             <form action="#" class="form__form" id="secondForm">
                 <input class="form__input form__input_name _form__req" placeholder="Имя" data-input="true">
                 <input class="form__input form__input_phone _form__req" placeholder="+7 (978) 796-34-92" type="tel" data-input="true" maxlength="15">
-                <button class="form__button send-button" id="secondForm-record">Заказать консультацию</button>
+                <button class="form__button _order-button" id="secondForm-record">Заказать консультацию</button>
             </form>
         </div>
     </section>
