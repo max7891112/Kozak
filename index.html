@@ -616,7 +616,18 @@
     </section>
 
     <section class="form">
-        <div class="form__container _container"></div>
+        <div class="form__container _container" id="formContainer">
+            <div class="form__text-part">
+                <h3 class="form__title">Созрел вопрос?</h3>
+                <p class="form__subtitle">На бесплатной консультации дадим рекомендации по росту конверсии</p>
+                <p class="form__text">Проведем бесплатный аудит контекстной рекламы и вашего сайта</p>
+            </div>
+            <form action="#" class="form__form" id="questionForm">
+                <input class="form__input form__input_name _secondForm__req" placeholder="Имя" data-input="true">
+                <input class="form__input form__input_phone _secondForm__req" placeholder="+7 (978) 796-34-92" type="tel" data-input="true" maxlength="15">
+                <button class="form__button _order-button " id="form-record">Заказать консультацию</button>
+            </form>
+        </div>
     </section>
 
     <section class="contract">
@@ -636,7 +647,63 @@
     </section>
 
     <section class="cost-our-service">
-        <div class="cost-our-service__container _container"></div>
+        <div class="cost-our-service__container _container">
+            <h3 class="cost-our-service__title">Стоимость наших услуг</h3>
+            <p class="cost-our-service__subtitle">Выберите тариф под свои потребности</p>
+            <div class="cost-our-service__cost-rate-container">
+                <div class="cost-our-service__cost-rate cost-rate cost-rate_base">
+                    <div class="cost-rate__top-container">
+                        <img src="./components/costOurService/img/Box.png" alt="box">
+                        <h4 class="cost-rate__title">Базовый</h4>
+                        <p class="cost-rate__p">Выбор одной-двух самых маржинальных услуг</p>
+                        <p class="cost-rate__p">Проработка и подготовка семантики</p>
+                        <p class="cost-rate__p">Рекламные кампании: на поиске Яндекса на сайтах партнеров Яндекса (РСЯ)</p>
+                        <p class="cost-rate__p">A/B тестирование</p>
+                        <p class="cost-rate__p">Введение и оптимизация рекламного проекта от 3-х месяцев</p>
+                        <p class="cost-rate__p">Введение и оптимизация рекламной кампании в течении 1-го месяца Бесплатно</p>
+                    </div>
+                    <div class="cost-rate__bottom-container">
+                        <p class="cost-rate__another-p">Подходит для теста ниши бизнеса в интернете и для тех, кто только начинает зарабатывать с Яндекс Директ</p>
+                        <p class="cost-rate__cost">от 25 000 ₽</p>
+                        <button class="cost-rate__button _discassion-button" id="rootModal">Обсудить</button>
+                    </div>
+                </div>
+
+                <div class="cost-our-service__cost-rate cost-rate cost-rate_optimum">
+                    <div class="cost-rate__top-container">
+                        <img src="./components/costOurService/img/Briefcase.png" alt="briefcase">
+                        <h4 class="cost-rate__title">Оптимальный</h4>
+                        <p class="cost-rate__p">Все, что входит в пакет “Базовый” и кроме этого:</p>
+                        <p class="cost-rate__p">Поэтапный запуск остальных желаемых направлений, начиная с более маржинальных, для снижения резкой нагрузки на рекламный бюджет</p>
+                        <p class="cost-rate__p">Использование сервисов коллтрекинга и сквозной аналитики</p>
+                        <p class="cost-rate__p">Постепенное выведение на стабильный результат отдачи от рекламы в рублях</p>
+                        <p class="cost-rate__p">Введение и оптимизация рекламного проекта от 3-х месяцев</p>
+                    </div>
+                    <div class="cost-rate__bottom-container">
+                        <p class="cost-rate__another-p">Подходит для долговременных проектов с длинным плечом принятия решения о покупке, для B2B бизнесов</p>
+                        <p class="cost-rate__cost">от 75 000 ₽</p>
+                        <button class="cost-rate__button _discassion-button" id="rootModalCase">Обсудить</button>  
+                    </div>
+                    
+                </div>
+
+                <div class="cost-our-service__cost-rate cost-rate cost-rate_max">
+                    <div class="cost-rate__top-container">
+                        <img src="./components/costOurService/img/Toolbox.png" alt="toolbox">
+                        <h4 class="cost-rate__title">Максимальный</h4>
+                        <p class="cost-rate__p">Все, что входит в пакет “Оптимальный” и кроме этого:</p>
+                        <p class="cost-rate__p">Проработка дополнительной семантики для расширения охвата и увеличения количества трафика (Конкуренты + Wordstat + Поисковые подсказки)</p>
+                        <p class="cost-rate__p">Максимальное количество объявлений под максимальное число запросов Вашей потенциальной аудитории</p>
+                        <p class="cost-rate__p">Введение и оптимизация рекламного проекта от 6 месяцев</p>
+                        </div>
+                    <div class="cost-rate__bottom-container">
+                        <p class="cost-rate__another-p">Подходит для масштабной рекламной кампании с большим количеством направлений</p>
+                        <p class="cost-rate__cost">от 180 000 ₽</p>
+                        <button class="cost-rate__button _discassion-button">Обсудить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section class="advertising-company">
@@ -658,11 +725,64 @@
     </section>
 
     <section class="form">
-        <div class="form__container _container"></div>
+        <div class="form__container _container" id="secondFormContainer">
+            <div class="form__text-part form__text-part_second-form">
+                <h3 class="form__title">Мы гарантированно снизим стоимость клиента</h3>
+                <p class="form__text">Заполните форму и получите бесплатную консультацию</p>
+            </div>
+            <form action="#" class="form__form" id="secondForm">
+                <input class="form__input form__input_name _form__req" placeholder="Имя" data-input="true">
+                <input class="form__input form__input_phone _form__req" placeholder="+7 (978) 796-34-92" type="tel" data-input="true" maxlength="15">
+                <button class="form__button _order-button" id="secondForm-record">Заказать консультацию</button>
+            </form>
+        </div>
     </section>
 
     <section class="questions">
-        <div class="questions__container _container"></div>
+        <div class="questions__body _container" >
+            <h3 class="questions__title">Часто задаваемые вопросы</h3>
+            <div class="questions__container">
+                <ul class="questions__list">
+
+                    <div class="questions__question">
+                        <div class="questions__container-img">
+                            <li>Что входит в стоимость настройки 1</li>
+                            <img src="./components/questions/img/VectorUp.svg" alt="vector" data-vector="true">
+                        </div>
+                        <div class="questions__answer hidden">Вы получите поискоыые кампании, РСЯ и баннерную рекламы, а также 1 месяц ведения 1</div>
+                    </div>          
+
+                    <div class="questions__question">
+                        <div class="questions__container-img">
+                            <li>Что входит в стоимость настройки 2</li>
+                            <img src="./components/questions/img/VectorUp.svg" alt="vector" data-vector="true">
+                        </div>
+                        <div class="questions__answer hidden">Вы получите поискоыые кампании, РСЯ и баннерную рекламы, а также 1 месяц ведения 1
+                             Вы получите поискоыые кампании, РСЯ и баннерную рекламы, а также 1 месяц ведения 1 
+                             Вы получите поискоыые кампании, РСЯ и баннерную рекламы, а также 1 месяц ведения 1</div>
+                    </div>
+                    
+                    <div class="questions__question">
+                        <div class="questions__container-img">
+                            <li>Что входит в стоимость настройки 3</li>
+                            <img src="./components/questions/img/VectorUp.svg" alt="vector" data-vector="true">
+                        </div>
+                        <div class="questions__answer hidden">Вы получите поискоыые кампании, РСЯ и баннерную рекламы, а также 1 месяц ведения 1</div>
+                    </div>
+                
+                    <div class="questions__question">
+                        <div class="questions__container-img">
+                            <li>Что входит в стоимость настройки 4</li>
+                            <img src="./components/questions/img/VectorUp.svg" alt="vector" data-vector="true">
+                        </div>
+                        <div class="questions__answer hidden">Вы получите поискоыые кампании, РСЯ и баннерную рекламы, а также 1 месяц ведения 1</div>
+                    </div>         
+
+                    <div class="questions__question"></div>
+
+                </ul>
+            </div>
+        </div>
     </section>
 
     <footer class="footer">
@@ -726,4 +846,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 </body>
-</html>
+
+<!-- Сделать маску для ввода номера телефона -->
+<!-- формы реализованы дублированием кода -->

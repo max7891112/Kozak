@@ -1,0 +1,85 @@
+.form {
+    background-color: $color-very-light-blue;
+    width: 100%;
+    border-radius: 20px;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 40px;
+    }
+
+    &__text-part {
+        width: 40%;
+        &_second-form{
+            width: 50%;
+        }
+    }
+
+    &__title {
+        @include text(32px, 700, 130%);
+        padding: 40px 0 30px 0;
+    }
+
+    &__subtitle {
+        @include text(18px, 500, 130%);
+        padding-bottom: 30px;
+    }
+
+    &__text {
+        @include text(14px, 300, 130%);
+        padding-bottom: 55px;
+    }
+
+    &__form {
+        width: 495px;
+        display: flex;
+        flex-direction: column;
+        margin: 40px 0 50px 0;
+    }
+
+    &__input {
+        width: 100%;
+        border-radius: 8px; 
+        border: 2px solid $color-dark-blue;
+        padding: 15px 20px;
+        margin-bottom: 20px;
+        background-color: $color-very-light-blue;
+        &_name {
+            &._error{
+                border: 2px solid $color-red;
+            }
+    
+            &._error::-moz-placeholder {
+                color: $color-red;
+            }
+
+            &:focus::-webkit-input-placeholder{
+                color: transparent
+            }
+    
+            &:focus::-moz-placeholder{
+                color: transparent
+            }
+    
+            &:focus::-ms-input-placeholder{
+                color: transparent
+            }
+        }
+
+        &_phone {
+            &._error{
+                border: 2px solid $color-red;
+            }
+        }
+
+        &:focus{
+            border: 2px solid $color-light-blue;
+        }
+
+    }
+
+    &__button {
+       
+    }
+}
