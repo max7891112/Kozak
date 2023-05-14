@@ -30,24 +30,6 @@
 
     &__btn {
         width: 289px;
-        height: 48px;
-        border-radius: 30px;
-        background: $color-dark-blue;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: $color-white;
-        @include text($font-standard, $font-weight-light, 130%);
-
-        &:hover {
-            background-color: $color-light-blue;
-            transition: all ease 0.3s;
-        }
-
-        &:active {
-            background-color: $color-black;
-            transition: all ease 0.3s;
-        }
     }
 
     &__right-p {

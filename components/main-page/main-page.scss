@@ -16,15 +16,7 @@
     }
 
     &__menu-navigation-item {
-        &:hover {
-            color: $color-light-blue;
-            transition: all ease 0.3s;
-        }
-
-        &:active {
-            color: $color-light-blue;
-            transition: all ease 0.3s;
-        }
+        
     }
 
     &__slogan-box {
@@ -74,50 +66,11 @@
 
     &__dark-btn {
         width: 289px;
-        height: 48px;
-        border-radius: 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: $color-dark-blue;
-        color: $color-white;
-        @include text($font-standard, $font-weight-light, 17px);
         margin-bottom: 10px;
-
-        &:hover {
-            background-color: $color-light-blue;
-            transition: all ease 0.3s;
-        }
-
-        &:active {
-            background-color: $color-black;
-            transition: all ease 0.3s;
-        }
     }
 
     &__light-btn {
-        width: 289px;
-        height: 48px;
-        border-radius: 30px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: $color-white;
-        color: $color-dark-blue;
-        border: 1px solid $color-dark-blue;
-        @include text($font-standard, $font-weight-light, 17px);
-
-        &:hover {
-            color: $color-light-blue;
-            border: 1px solid $color-light-blue;
-            transition: all ease 0.3s;
-        }
-
-        &:active {
-            color: $color-black;
-            border: 1px solid $color-black;
-            transition: all ease 0.3s;
-        }
+        
     }
 
     &__bottom-part {

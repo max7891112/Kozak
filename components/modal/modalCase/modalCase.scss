@@ -6,7 +6,7 @@
     height: 100vh;
     padding-top: 50px;
     @include text(14px, 300, 130%);
-    z-index: 20;
+    z-index: 40;
 
     span{
         @include text(22px, 500, 130%);

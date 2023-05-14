@@ -1,13 +1,11 @@
 .swiper-slider {
+    padding-bottom: 120px;
 
     &__container {
         padding-top: 120px;
     }
 
     &__visable {
-        // display: flex;
-        // flex-direction: row;
-        // flex-wrap: wrap;
         overflow: hidden;
         position: relative;
     }
@@ -83,7 +81,7 @@
         display: flex;
         align-self: flex-end;
         position: absolute;
-        z-index: 100;
+        z-index: 10;
         right: 0;
     }
 
@@ -150,27 +148,6 @@
 
     &__light-dark {
         width: 289px;
-        height: 48px;
-        color: #313B43;
-        background: $color-white;
-        border: 1px solid #313B43;
-        border-radius: 30px;
-        @include text($font-standard, $font-weight-light, 130%);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        
-        &:hover {
-            color: $color-light-blue;
-            border: 1px solid $color-light-blue;
-            transition: all ease 0.3s;
-        }
-
-        &:active {
-            color: $color-black;
-            border: 1px solid $color-black;
-            transition: all ease 0.3s;
-        }
     }
 }
 

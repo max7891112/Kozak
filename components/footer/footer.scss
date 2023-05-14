@@ -59,16 +59,15 @@
         background-color: $color-white;
         border-radius: 30px;
         color: $color-black;
+        transition: all ease 0.3s;
 
         &:hover {
             background-color: $color-very-light-blue;
-            transition: all ease 0.3s;
         }
 
         &:active {
             background-color: $color-light-blue;
             color: $color-white;
-            transition: all ease 0.3s;
         }
     }
 
