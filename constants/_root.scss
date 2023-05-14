@@ -1,3 +1,23 @@
+html{
+    font-size: 14px;
+}
+
+* {
+    font-family: 'Unbounded', sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+a{
+    cursor: pointer;
+}
+
+$index: calc(1vh + 1vw);
+$duration: 20s;
+// 22.65px
+
 $color-black: #000000;
 $color-white: #FFFFFF;
 $color-background: #F5F5F5;
@@ -17,26 +37,9 @@ $font-weight-medium: 500;
 $font-weight-semibold: 600;
 $font-weight-bold: 700;
 
-html{
-    font-size: 14px;
-}
-
-* {
-    font-family: 'Unbounded', sans-serif;
-}
-
-a{
-    cursor: pointer;
-}
-
-body{
-    overflow-x: hidden;
-    background-color: $color-background;
-}
-
 @mixin text($s, $w, $h) {
     font-size: $s;
     font-weight: $w;
     line-height: $h;
-    // @include heading(Montserrat, 24px, 79px,red)
+    // @include text(Montserrat, 24px, 79px,red)
 }
