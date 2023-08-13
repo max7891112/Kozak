@@ -7,7 +7,7 @@
 ._discassion-button{
     @include text(14px, 300, 130%);
     color: $color-white;
-    padding: 15px 97px;
+    padding: 15px 20px;
     background-color: $color-dark-blue;
     border-radius: 30px;
     transition: all .3s ease 0s;
@@ -72,4 +72,8 @@
             color: $color-black;
             border: 1px solid $color-black;
         }
+}
+
+.hidden {
+    display: none;
 }

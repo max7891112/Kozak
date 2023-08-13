@@ -13,8 +13,8 @@
     }
 
     &__body {
-        width: 1220px;  
-        height: 600px;
+        max-width: 1220px;  
+        height: 575px;
         background-color: $color-white;
         position: relative;
         border-radius: 20px 0 0 20px;
@@ -35,6 +35,12 @@
     &__title {
         @include text(32px, 700, 130%);
         padding-bottom: 20px;
+        @media (max-width: 500px) {
+            font-size: 25px;
+        }
+        @media (max-width: 350px) {
+            font-size: 20px;
+        }
     }
 
     &__client {
@@ -47,6 +53,9 @@
     &__task-container {
         display: flex;
         margin-bottom: 10px;
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
     }
 
     &__task-title {
@@ -60,6 +69,9 @@
 
     &__did-container {
         display: flex;
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
     }
 
     &__did-title {
@@ -77,10 +89,16 @@
 
     &__results-container {
         display: flex;
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
     }
 
     &__results-title {
         margin-right: 48px;
+        @media (max-width: 768px) {
+            margin-right: 25px;
+        }
     }
 
     &__results-ul {
@@ -92,7 +110,7 @@
         padding: 3px 0;
         list-style: none;
         position: relative;
-        padding: 10px 0;
+        padding: 10px 10px;
         &::after{
             content: "";
             width: 32px;
@@ -102,12 +120,30 @@
             top: 18%;
             left: -4%;
         }
+        @media (max-width: 768px) {
+            padding: 10px 0 10px 30px;
+        }
     }
 
     &__img-container{
         display: flex;
         flex-direction: column;
         align-items: center;
+        @media (max-width: 768px) {
+            img {
+                width: 500px;
+            };
+        }
+        @media (max-width: 550px) {
+            img {
+                width: 400px;
+            };
+        }
+        @media (max-width: 450px) {
+            img {
+                display: none
+            };
+        }
     }
 }
 

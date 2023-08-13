@@ -19,16 +19,25 @@
         flex-direction: column;
         background-color: $color-very-light-blue;
         position: relative;
-        border-radius: 20px
+        border-radius: 20px;
+        @media (max-width: 768px) {
+            padding: 50px;
+            margin: 0 10px;
+        }
     }
 
     &__container{
-
     }
 
     &__title {
         @include text(32px, 700, 130%);
         padding-bottom: 50px;
+        @media (max-width: 768px) {
+            font-size: 25px;
+        }
+        @media (max-width: 450px) {
+            font-size: 18px;
+        }
     }
 
     &__close {
@@ -51,7 +60,6 @@
         padding: 15px 20px;
         margin-bottom: 20px;
         background-color: transparent;
-
 
         &_name {
             &._error{

@@ -4,6 +4,7 @@ import SecondForm from "./components/secondForm/SecondForm.js";
 import TechnicalFunctions from "./technicalFunctions/TechnicalFunctions.js";
 document.addEventListener('DOMContentLoaded', () => {
     Form.sendForm();
+    Form.maskForPhone()
     SecondForm.sendForm();
     Questions.addListener();
     TechnicalFunctions.addListenerDataClose();

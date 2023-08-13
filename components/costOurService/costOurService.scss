@@ -1,21 +1,35 @@
 .cost-our-service {
     width: 100%;
+    
 
     &__container {
+        
     }
 
     &__title {
         padding: 60px 0;
         @include text(32px, 700, 130%);
+        @media (max-width: 500px) {
+            font-size: 25px;
+            padding: 30px 0;
+        }
     }
 
     &__subtitle {
         @include text(22px, 500, 130%);
         padding-bottom: 27px;
+        @media (max-width: 500px) {
+            font-size: 15px;
+            padding-bottom: 15px;
+        }
     }
 
     &__cost-rate-container {
         display: flex;
+        @media (max-width: 850px) {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     &__cost-rate {
@@ -33,9 +47,20 @@
     flex-direction: column;
     justify-content: space-between;
 
+    @media (max-width: 1150px) {
+        height: auto;
+        justify-content: baseline;
+    }
+    @media (max-width: 850px) {
+        width: 80%;
+    }
+
     &__title {
         @include text(22px, 500, 130%);
         margin-bottom: 20px;
+        @media (max-width: 500px) {
+            font-size: 18px;
+        }
     }
 
     &__p {
@@ -45,7 +70,7 @@
 
     &__another-p {
         max-width: 226px;
-        max-height: 146px;
+        max-height: 210px;
         @include text(14px, 300, 130%);
         padding: 20px;
         background-color: $color-white;
@@ -58,8 +83,17 @@
         margin-bottom: 40px;
     }
 
-    &__button {
+    &__p-container{
+        @media (max-width: 1150px) {
+            display: none;
+        }
+        @media (max-width: 850px) {
+            display: block;
+        }
+    }
 
+    &__button {
+        width: 100%;
     }
 
     &_base{
@@ -67,7 +101,6 @@
     }
 
     &_optimum{
-        margin: 0 10px;
         background-color: $color-light-blue;
     }
 

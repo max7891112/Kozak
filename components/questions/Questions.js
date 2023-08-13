@@ -4,8 +4,8 @@ class Questions{
             let vector = event.target
             if(!vector.hasAttribute('data-vector')) return
             let target = vector.parentNode.nextElementSibling
-            target.classList.toggle('hidden')
-            if(target.classList.contains('hidden')) {
+            target.classList.toggle('hidden__question')
+            if(target.classList.contains('hidden__question')) {
                 vector.style.transform = 'rotate(0deg)'
             } else {
                 vector.style.transform = 'rotate(-180deg)'

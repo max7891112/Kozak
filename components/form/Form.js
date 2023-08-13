@@ -1,4 +1,5 @@
 import TechnicalFunctions from "../../technicalFunctions/TechnicalFunctions";
+import IMask from 'imask'
 
 class Form{
     sendForm() {
@@ -60,7 +61,16 @@ class Form{
             }
         }
         TechnicalFunctions.addListenerForDataInput();
-        TechnicalFunctions.addListenerForTelMask()
+    };
+    maskForPhone() {
+        const phoneInputs = document.querySelectorAll('.form__input_phone')
+        for( let input of phoneInputs) {
+            if(input) {
+                this.mask = new IMask(input, {
+                     mask: "+{7}(000) 000-00-00"
+                });
+            };
+        }
     };
 };
 

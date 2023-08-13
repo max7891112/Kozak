@@ -60,7 +60,6 @@ class SecondForm{
             }
         }
         TechnicalFunctions.addListenerForDataInput();
-        TechnicalFunctions.addListenerForTelMask()
     };
 };
 
